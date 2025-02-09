@@ -13,12 +13,6 @@ app.use(express.json())
 app.use(cors())
 
 //api routes
-// app.get('/',(req,res)=>res.send("API Woeking"))
+app.get('/',(req,res)=>res.send("API Woeking"))
 
-// app.listen(PORT,()=>console.log("server running on port "+PORT))
-
-app.get("/", (req, res) => {
-    res.send("Hello from Vercel!");
-});
-
-module.exports = app;
+app.listen(PORT,()=>console.log("server running on port "+PORT))
